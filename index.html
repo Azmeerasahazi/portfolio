@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Personal portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2ae6c026a9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+     <div class="container">
+      <nav>
+        <img src="images/portfolioLogo.jpg" alt="logo" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times"  onclick="closemenu()"  style="color: black;"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" style="color: black;"></i>
+      </nav>
+      <div class="header-text">
+        
+        <h1>Hi,I'm <br> <span>Azmeera Sahazi</span></h1>
+        <p><strong>WebDeveloper</strong></p>
+      </div>
+     </div> 
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="images/Mynew photo.jpg" alt="hero" ></div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me...</h1>
+            <p>Hello! I'm Ayshath Azmeera Sahazi, a dedicated webdeveloper specializing in HTML,CSS,BootStrap,javaScript.My Focus on code quality ensures that i deliver exceptional web solutions. I'm currently available for freelance work and eager to assit with your projects. if you're looking to start a new project or require support,feel free to reachout.Your success is my priority,and I'm here to help achieve your goals</p>
+            <div class="tab-title">
+              <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-link"onclick="opentab('education')" >Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><p>HTML <br> CSS <br> BootStrap <br> JavaScript   </p></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>        
+                <li><span>Fullstack (MERN) Development</span><p>2023-present<br> Self Learning</p></li>
+                <li><span>BCA</span><p> 2015-2018<br> Kannur University, Sa-adiya Arts and Science Collge</p></li>
+                <li><span>12th</span><p> 2013-2015<br> Kerala state board, HSS mogral</p></li>
+                <li><span>10th</span><p>2013<br> Kerala state board, THSS bedradukka</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- --------------------------services-------- -->
+
+  <div id="services">
+    <div class="container">
+      <div class="subtitle">Services</div>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-code fa-fade"></i>
+          <h2>Web Development</h2>
+          <p> I specialize in coding and programming to create websites that not only look great but also work seamlessly. From building custom features and integrating essential functionalities to optimizing for speed and performance, I've got your back. Whether it's a simple landing page or a complex e-commerce site,I'm here to make your website functional, user-friendly, and ready to impress your visitors</p>
+        <a href="#contact">Learn more</a>
+       
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop fa-flip"></i>
+          <h2>Web Designing</h2>
+          <p>Are you looking to establish a strong online presence for your business or personal project? I'm here to help you create a visually appealing and user-friendly website. From layout and color schemes to navigation and responsive design, I'll ensure your website looks great on all devices. Let me transform your ideas into an engaging online platform that attracts visitors and leaves a lasting impression."</p>
+        <a href="#contact">Learn more</a> 
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------portfolio -->
+        
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/youtube.png" alt="youtube">
+          <div class="layer">
+            <h3>Youtube-Clone</h3>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/hulu.png" alt="Hulu">
+          <div class="layer">
+            <h3>Hulu-Clone </h3> 
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/l" alt="linkedin">
+          <div class="layer">
+            <h3>LInkedIn-Clone</h3>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/prsnlweb.png" alt="web">
+          <div class="layer">
+            <h3>PersonalPortfolio(Temp) </h3>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+<!-- -------------------Blogs----------------- -->
+<div id="blogs">
+    <div class="container">
+      <h1 class="subtitle">Blogs</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/upskilling.jpeg" alt="youtube">
+          <div class="layer">
+            <h3>Why Upskilling and Reskilling Are Key to Future-Proofing Your Organization <b>-Anne McSilver</b></h3>
+            <a href="https://www.linkedin.com/business/talent/blog/learning-and-development/upskill-reskill-future-proofing"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/internalMobility.jpeg" alt="netflix">
+          <div class="layer">
+            <h3>What Is Internal Mobility and Why Do So Many Organizations Get It Wrong? <b>-Laurie Moot</b></h3>
+             <a href="https://www.linkedin.com/business/talent/blog/learning-and-development/what-is-internal-mobility-and-how-to-get-it-right"><i class="fa-solid fa-link"></i></a>
+              </div>
+        </div>
+        <div class="work">
+          <img src="images/Microsoft.webp" alt="linkedin">
+          <div class="layer">
+            <h3>Microsoft is removing WordPad from Windows after nearly 30 years</h3>
+            <a href="https://www.theverge.com/2023/9/3/23857331/microsoft-wordpad-windows-removal-end-of-support"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/DEvTools.webp" alt="web">
+          <div class="layer">
+            <h3>Developer Productivity Tools: 17 Trending Apps You Need to Try 💯 <b>-Alex Omeyer</b> </h3>
+            <a href="https://dev.to/alexomeyer/developer-productivity-tools-17-trending-apps-you-need-to-try-2ajb"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/DigiLocker.png" alt="web">
+          <div class="layer">
+            <h3>Enhancing User Experience: Taming Geolocation Prompts in DigiLocker Integration <b>-Ali Abbas</b> </h3>
+            <a href="https://medium.com/@realabbas5/enhancing-user-experience-taming-geolocation-prompts-in-digilocker-integration-38aec2c7ab30"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/URLenter.JPG" alt="web">
+          <div class="layer">
+            <h3>What happens when you type a URL in the browser and press enter? <b>-Blessing Dawodu</b> </h3>
+            <a href="https://medium.com/@ibukunoluwadawodu/what-happens-when-you-type-a-url-in-the-browser-and-press-enter-498df8c5eb13"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- --------contact---- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left"> 
+          <h1 class="subtitle"> Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> sahazimoideen@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i>+91 8129062477</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/azmih.ere?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/azmeera-sahazi-625a83290?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTjoUW8SyT96Xo7RcZnp%2FyA%3D%3D" "><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/AzmeeraSahazi?t=coSC3NWO5kuobpHuXFCttQ&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <a href="images/sahazi cv.pdf" class="btn btn-2">Download CV</a>
+        </div>
+        <div class="contact-right"> 
+          <form id="submit-form" name="myForm" onsubmit="return validateForm()">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email-id" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-2">Submit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright©️AzmeeraSahazi.  <i class="fa-solid fa-heart fa-beat"></i></p>
+    </div>
+  </div> 
+
+    <script src="script.js"></script>
+    <script>
+ 
+  </script>
+    
+    
+</body>
+</html>
